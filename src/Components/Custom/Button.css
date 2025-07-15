@@ -1,0 +1,30 @@
+.start-btn {
+  height: 56px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--bg-secondary), var(--txt-highlight));
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+/* Outline variant */
+.start-btn-outline {
+  height: 56px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  border: 2px solid var(--txt-highlight);
+  color: var(--bg-secondary) !important;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.start-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+    transform: scale(1.05);
+}

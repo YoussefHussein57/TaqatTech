@@ -1,0 +1,15 @@
+:root {
+  /* Background Colors */
+  --bg-secondary: #322159;
+  --bg-primary: #A973B2;
+  --bg-accent: #F9F5F9;
+  --bg-footer:#1C1231;
+
+  /* Text Colors */
+  --txt-primary: #ffffff;
+  --txt-extra-dark: #150E25;
+  --txt-highlight: #7F2E8C;
+
+  /* Border Colors */
+  --border-dark: #15803D;
+}

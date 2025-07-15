@@ -1,0 +1,103 @@
+.footer{
+    background-color: var(--bg-footer);
+    padding: 100px 0;
+    align-self: stretch;
+    position: relative;
+    overflow: hidden;
+}
+.footer__container{
+  max-width: 1399px;
+  padding: 0 32px;
+  gap: 120px;
+}
+.frame-logo{
+  gap: 12.857px;
+}
+.frame-social{
+  height: 32px;
+    gap: 21.333px;
+  }
+  
+  .subscribeBtn{
+    background: linear-gradient(90deg, var(--Color-Background-Secondary-Default, #322159) 0%, var(--Color-Background-Primary-Default, #7F2E8C) 100%);
+    border-radius: 0 20px 20px 0 !important;
+    
+  }
+  
+  
+  .ellipse {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #C1BCCD;
+    opacity: 0.3;
+    z-index: 0; /* Behind the footer content */
+  }
+  
+  /* Largest ellipse at the back */
+  .ellipse-3 {
+    width: 1072px;
+    height: 1072px;
+    top: -536px;
+    right: -536px;
+  }
+  
+  /* Middle ellipse */
+  .ellipse-2 {
+    width: 766.386px;
+    height: 766.386px;
+    top: -383px;
+    right: -383px;
+  }
+  
+  /* Smallest ellipse */
+  .ellipse-1 {
+    width: 505.103px;
+    height: 505.103px;
+    top: -252.5px;
+    right: -252.5px;
+  }
+  
+  
+  .heading6{
+    font-weight: 700;
+    font-size: 20px;
+    
+  }
+  .inputGrp{
+    border-radius: 20px 0 0 20px !important;
+  }
+  /* ===== Footer Links Hover ===== */
+  .footer .nav-link {
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer .nav-link:hover {
+  color: var(--primary-color); /* Use your accent or brand color */
+  transform: scale(1.2);
+}
+
+/* ===== Social Icons Hover ===== */
+.frame-social .faIcon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.frame-social .faIcon:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+.bottomBar{
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .footer{
+    padding: 64px 0;
+ 
+  }
+  
+}

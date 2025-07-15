@@ -1,0 +1,59 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+.hero{
+  background-image: url("../../Assets/home/HeroBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6rem 2rem;
+}
+
+.HeroTxt1{
+    color: var(--Color-Content-Secondary-Extra-dark, #150E25);
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 120%;
+    max-width: 1000px;
+    
+    span{
+        background: linear-gradient(90deg, var(--Color-Content-Secondary-Default, #47376A) 38.83%, var(--Color-Content-Primary-Default, #7F2E8C) 76.85%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        
+        
+    }
+    
+}
+.HeroPara{
+    color: var(--Color-Content-Secondary-Dark, #2E1E51);
+    font-size: 24px;
+    font-weight: 500;
+        max-width: 870px;
+
+    
+}
+
+/* Optional: responsive tweak for very small screens */
+@media (max-width: 999px) {
+  .hero {
+    padding: 4rem 1rem;
+    background-attachment: scroll;
+    background: none !important;
+  }
+ 
+  
+}
+@media (min-width:999px) {
+    .HeroTxt1{
+    max-width: 1000px;
+    margin-left: 100px;
+  }
+  .HeroPara{
+    max-width: 870px;
+    margin-left: 75px;
+  }
+    
+}
