@@ -10,14 +10,14 @@
 }
 
 .HeroTxt1{
-    color: var(--Color-Content-Secondary-Extra-dark, #150E25);
+    color: var(--txt-extra-dark);
     font-size: 72px;
     font-weight: 800;
     line-height: 120%;
     max-width: 1000px;
     
     span{
-        background: linear-gradient(90deg, var(--Color-Content-Secondary-Default, #47376A) 38.83%, var(--Color-Content-Primary-Default, #7F2E8C) 76.85%);
+        background: linear-gradient(90deg, var(--Color-Content-Secondary-Default) 38.83%, var(--txt-highlight) 76.85%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -28,12 +28,88 @@
     
 }
 .HeroPara{
-    color: var(--Color-Content-Secondary-Dark, #2E1E51);
+    color: var(--Color-Content-Secondary-Dark);
     font-size: 24px;
     font-weight: 500;
         max-width: 870px;
 
     
+}
+.agencies{
+    padding: 120px;
+}
+.agenciesHeader{
+    max-width: 1400px;
+    padding: 32px;
+    gap: 96px;
+    .agenciesHeaderTxt{
+
+        color: var( --Color-Content-Secondary-Default);
+        font-size: 20px;
+        font-weight: 500;
+        
+        span{
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--Color-Content-Secondary-Dark);
+        }
+    }   
+}
+.agenciesLogos{
+    gap: 20px 72px;
+}
+.img-fluid{
+    width: 172px;
+}
+
+.services{
+    max-width: 1400px;
+    padding: 48px;
+    background:var(--bg-secondary) ;
+    border-radius: 50px;
+    color: #fff;
+}
+.serviceLeft{
+    max-width: 753px;
+}
+.serviceLeftName{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.serviceLeftTitle{
+    font-size: 32px;
+    font-weight: 700;
+    span{
+        font-size: 48px;
+    }
+}
+.serviceLeftDesc{
+    font-size: 20px;
+    font-weight: 500;
+}
+.support-badge {
+  background-color: #fff;
+  border-radius: 999px;
+  position: relative;
+  top: 27px;
+  left: 250px;
+  z-index: 2;
+  opacity: 0.9;
+   color: #000;
+}
+
+.badge-circle {
+   
+  width: 36px;
+  height: 36px;
+  border: 2px solid #22c55e;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Optional: responsive tweak for very small screens */
