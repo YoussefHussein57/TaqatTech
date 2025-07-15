@@ -43,17 +43,21 @@
     background-attachment: scroll;
     background: none !important;
   }
+      .HeroTxt1{
+        font-size: 48px;
+  }
+  .HeroPara{
+    font-size: 20px;
+  }
  
   
 }
 @media (min-width:999px) {
     .HeroTxt1{
     max-width: 1000px;
-    margin-left: 100px;
   }
   .HeroPara{
     max-width: 870px;
-    margin-left: 75px;
   }
     
 }

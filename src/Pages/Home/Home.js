@@ -6,22 +6,22 @@ export default function Home(){
     return(
         <>
         <div className="container">
-           <section className="hero row d-flex flex-column align-items-center text-center g-4 px-3 px-md-5 ">
-  <div className="col-12">
+           <section className="hero d-flex flex-column align-items-center text-center gap-4 px-3 px-md-5 ">
+  <div>
     <h1 className="HeroTxt1">
       Transform Your Business with <span>TaqaTechno</span>
     </h1>
   </div>
 
-  <div className="col-12 col-md-10">
+  <div >
     <p className="HeroPara">
       As an Official Odoo Partner, we help businesses streamline their operations, boost productivity, and drive growth with customized Odoo implementations.
     </p>
   </div>
 
   <div className="buttons d-flex flex-column flex-md-row justify-content-center gap-3 col-12 col-md-8">
-    <Button path="/" className="col-12 col-md-3">Get Started</Button>
-    <Button path="/" variant="outline" className="col-12 col-md-3">Learn More</Button>
+    <Button path="/" >Get Started</Button>
+    <Button path="/" variant="outline" >Learn More</Button>
   </div>
 
   <div className="heroLogo col-12 d-flex justify-content-center">
