@@ -1,20 +1,20 @@
 import {
-  faLightbulb,
-  faCogs,
+  faGear,
+  faCertificate,
   faCode,
-  faExchangeAlt,
-  faChartLine,
-  faLifeRing,
+  faPuzzlePiece,
+  faMagnifyingGlassChart,
+  faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
 
 const services = [
   {
-    icon: faLightbulb,
+    icon: faCertificate,
     title: "Odoo Licenses",
     description: "Get official Odoo licenses with premium support and regular updates.",
   },
   {
-    icon: faCogs,
+    icon: faGear,
     title: "Implementation",
     description: "Expert implementation services tailored to your business needs.",
   },
@@ -24,17 +24,17 @@ const services = [
     description: "Custom modules and features development to match your requirements.",
   },
   {
-    icon: faExchangeAlt,
+    icon: faPuzzlePiece,
     title: "Integration",
     description: "Seamless integration with your existing systems and third-party apps.",
   },
   {
-    icon: faChartLine,
+    icon: faMagnifyingGlassChart,
     title: "Business Analysis",
     description: "Comprehensive business analysis and process optimization.",
   },
   {
-    icon: faLifeRing,
+    icon: faHeadset,
     title: "Support & Training",
     description: "24/7 technical support and comprehensive training programs.",
   },

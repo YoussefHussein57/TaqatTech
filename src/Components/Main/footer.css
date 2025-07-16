@@ -6,8 +6,8 @@
     overflow: hidden;
 }
 .footer__container{
-  max-width: 1399px;
-  padding: 0 32px;
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
   gap: 120px;
 }
 .frame-logo{
@@ -60,7 +60,7 @@
   
   .heading6{
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--fs-sm);
     
   }
   .inputGrp{
@@ -71,7 +71,7 @@
   color: #ffffff;
   transition: all 0.3s ease;
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--fs-sm);
 }
 
 .footer .nav-link:hover {
@@ -92,7 +92,7 @@
   transform: scale(1.2);
 }
 .bottomBar{
-  font-size: 14px;
+  font-size: var(--fs-xs);
 }
 @media screen and (max-width: 768px) {
   .footer{

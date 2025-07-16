@@ -11,7 +11,31 @@
   --txt-highlight: #7F2E8C;
   --Color-Content-Secondary-Default:#47376A;
   --Color-Content-Secondary-Dark: #2E1E51;
+  --Color-Content-Tertiary1-Extra-dark:#091F38;
 
   /* Border Colors */
   --border-dark: #15803D;
+
+
+  --container-width:1400px;
+  --container-padding: 32px;
+  --container-lg-padding: 48px;
+
+  --container-gap:96px;
+
+
+  /* FontSizes */
+
+
+  --fs-xxl:72px ;
+  --card-title-fs:60px;
+  
+  
+  --fs-xl:48px;
+  --fs-lg: 32px;
+  --fs-md:24px;
+  --fs-sm:20px;
+  --card-para-fs:18px;
+  --fs-normal:16px;
+  --fs-xs:14px;
 }
