@@ -3,7 +3,7 @@ import Button from "../../Components/Custom/Button";
 import HeroLogo from "../../Assets/home/Frame 578.png";
 import ServiceImg from "../../Assets/home/ServiceFrame.png";
 import quotations from "../../Assets/home/quotations.svg";
-import gear from "../../Assets/home/gear.png"
+import gear from "../../Assets/home/gear.png";
 import services from "../../data";
 import ServiceCard from "../../Components/Custom/ServiceCard";
 import NumbersCard from "../../Components/Custom/NumbersCard";
@@ -73,7 +73,7 @@ export default function Home() {
               growth tech company
             </h2>
           </div>
-          <div className="agenciesLogos d-flex justify-content-center flex-wrap ">
+          <div className="agenciesLogos d-flex justify-content-lg-center">
             {logos.map((logo, index) => (
               <img
                 key={index}
@@ -109,12 +109,12 @@ export default function Home() {
 
             <div
               className="ServiceImage d-flex  gap-3"
-              style={{ maxWidth: "480px", maxHeight: "700px" }}
+              style={{ maxWidth: "480px" }}
             >
               <img
                 src={ServiceImg}
                 alt="service"
-                style={{ maxWidth: "451px", height: "650px" }}
+                style={{ maxWidth: "451px"}}
               />
             </div>
           </div>
@@ -175,21 +175,21 @@ export default function Home() {
                 style={{ maxWidth: "700px" }}
               >
                 <div className="quote-icon text-primary mb-3 fs-2">
-                  <img src={quotations}  alt="qutotations"/>
+                  <img src={quotations} alt="qutotations" />
                 </div>
                 <p className="fs-5">{current.text}</p>
-              <div className="d-flex flex-column align-items-center mt-4">
-                <img
-                  src={current.img}
-                  alt={current.name}
-                  className="rounded-circle mb-2"
-                  width="48"
-                  height="48"
+                <div className="d-flex flex-column align-items-center mt-4">
+                  <img
+                    src={current.img}
+                    alt={current.name}
+                    className="rounded-circle mb-2"
+                    width="48"
+                    height="48"
                   />
-                <strong>{current.name}</strong>
-                <small className="text-secondary">{current.title}</small>
-              </div>
-                  </motion.blockquote>
+                  <strong>{current.name}</strong>
+                  <small className="text-secondary">{current.title}</small>
+                </div>
+              </motion.blockquote>
               {/* Arrows wrapper - stays left/right on desktop, center below on mobile */}
               <div className="arrows-wrapper">
                 <button className="arrow-btn left" onClick={prev}>
@@ -208,29 +208,18 @@ export default function Home() {
           <div className="starter container d-flex flex-column flex-lg-row align-items-start">
             <div className="starter__left d-flex flex-column align-items-start order-2 order-lg-1">
               <h2 className="Starter__txt">
-                Unlock Your Business Potential with <span> TaqaTechno </span> 
+                Unlock Your Business Potential with <span> TaqaTechno </span>
               </h2>
-              <p className="Starter__para"> 
-                Ready to transform your business with seamless Odoo solutions? Let’s innovate together and drive your success forward.
-
+              <p className="Starter__para">
+                Ready to transform your business with seamless Odoo solutions?
+                Let’s innovate together and drive your success forward.
               </p>
-              <Button 
-              path="/"
-              >
-                Get Started 
-              </Button>
-
-
+              <Button path="/">Get Started</Button>
             </div>
             <div className="starter__right d-flex justify-content-center order-1 order-lg-2">
               <img src={gear} alt="gear" />
-
             </div>
-
-
           </div>
-
-
         </section>
       </div>
     </>

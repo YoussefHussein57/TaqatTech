@@ -5,12 +5,12 @@ import "./header.css";
 
 export default function Header() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom px-md-5"> {/* added px-4 for space on sides */}
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-custom px-md-5"> {/* added px-4 for space on sides */}
+      <div className="container gx-0">
         <img src={vector} alt="logoImage" />
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -21,7 +21,7 @@ export default function Header() {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse links" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex justify-content-center list-unstyled mx-auto">
             {/* Centered menu items */}
             <li className="nav-item mx-2 fw-medium">

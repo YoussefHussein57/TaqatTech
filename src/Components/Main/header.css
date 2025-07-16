@@ -1,7 +1,7 @@
 .navbar-custom {
   height: 96px;
-  font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #D1D5DB;
+  font-family: "Inter", sans-serif;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .navbar-container {
@@ -11,7 +11,7 @@
 }
 
 .nav-link-custom {
-  color: #0A0A0A;
+  color: #0a0a0a;
   font-size: var(--fs-normal);
   line-height: 150%;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -22,7 +22,7 @@
   border-radius: 8px;
   color: #fff !important;
 }
-.links{
+.links {
   gap: 12px;
 }
 
@@ -35,27 +35,29 @@
 }
 
 .langBtn {
+  color: var(--Color-Content-Tertiary1-Extra-dark);
   background-color: transparent;
 }
 
+.navbar-collapse{
+  overflow: hidden;
+  transition: min-height 0.5s ease-in-out;
+  width: 100%; 
+}
 
 .navbar-collapse.show {
-  background:linear-gradient(var(--bg-footer) ,var( --bg-primary) ) ;
-  color: white;
-  padding: 1rem;
+  background: var(--bg-accent);
+  color: var(--Color-Content-Tertiary1-Extra-dark);
   z-index: 3;
-  width: 100%;
-  button{
-    color: #fff;
-  }
+  max-height: 100%;
+
+ 
 }
 
 /* Make links white */
 .navbar-collapse.show .nav-link {
-  color: white !important;
+color: var(--Color-Content-Tertiary1-Extra-dark);
+
 }
 
-/* Optional: Hover effect for clarity */
-.navbar-collapse.show .nav-link:hover {
-  text-decoration: underline;
-} 
+
