@@ -27,7 +27,7 @@
 }
 
 .nav-link-custom.fw-medium {
-  font-weight: 500;
+  font-weight: var(--fw-bold);
 }
 
 .navbar-nav-custom {

@@ -1,76 +1,76 @@
-.footer{
-    background-color: var(--bg-footer);
-    padding: 100px 0;
-    align-self: stretch;
-    position: relative;
-    overflow: hidden;
+.footer {
+  background-color: var(--bg-footer);
+  padding: 100px 0;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
 }
-.footer__container{
+.footer__container {
   max-width: var(--container-width);
   padding: 0 var(--container-padding);
   gap: 120px;
 }
-.frame-logo{
+.frame-logo {
   gap: 12.857px;
 }
-.frame-social{
+.frame-social {
   height: 32px;
-    gap: 21.333px;
-  }
-  
-  .subscribeBtn{
-    background: linear-gradient(90deg, var(--Color-Background-Secondary-Default, #322159) 0%, var(--Color-Background-Primary-Default, #7F2E8C) 100%);
-    border-radius: 0 20px 20px 0 !important;
-    
-  }
-  
-  
-  .ellipse {
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid #C1BCCD;
-    opacity: 0.3;
-    z-index: 0; /* Behind the footer content */
-  }
-  
-  /* Largest ellipse at the back */
-  .ellipse-3 {
-    width: 1072px;
-    height: 1072px;
-    top: -536px;
-    right: -536px;
-  }
-  
-  /* Middle ellipse */
-  .ellipse-2 {
-    width: 766.386px;
-    height: 766.386px;
-    top: -383px;
-    right: -383px;
-  }
-  
-  /* Smallest ellipse */
-  .ellipse-1 {
-    width: 505.103px;
-    height: 505.103px;
-    top: -252.5px;
-    right: -252.5px;
-  }
-  
-  
-  .heading6{
-    font-weight: 700;
-    font-size: var(--fs-sm);
-    
-  }
-  .inputGrp{
-    border-radius: 20px 0 0 20px !important;
-  }
-  /* ===== Footer Links Hover ===== */
-  .footer .nav-link {
+  gap: 21.333px;
+}
+
+.subscribeBtn {
+  background: linear-gradient(
+    90deg,
+    var(--Color-Background-Secondary-Default, #322159) 0%,
+    var(--Color-Background-Primary-Default, #7f2e8c) 100%
+  );
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #c1bccd;
+  opacity: 0.3;
+  z-index: 0; /* Behind the footer content */
+}
+
+/* Largest ellipse at the back */
+.ellipse-3 {
+  width: 1072px;
+  height: 1072px;
+  top: -536px;
+  right: -536px;
+}
+
+/* Middle ellipse */
+.ellipse-2 {
+  width: 766.386px;
+  height: 766.386px;
+  top: -383px;
+  right: -383px;
+}
+
+/* Smallest ellipse */
+.ellipse-1 {
+  width: 505.103px;
+  height: 505.103px;
+  top: -252.5px;
+  right: -252.5px;
+}
+
+.heading6 {
+  font-weight: var(--fw-bolder);
+  font-size: var(--fs-sm);
+}
+.inputGrp {
+  border-radius: 20px 0 0 20px !important;
+}
+/* ===== Footer Links Hover ===== */
+.footer .nav-link {
   color: #ffffff;
   transition: all 0.3s ease;
-  font-weight: 500;
+  font-weight: var(--fw-bold);
   font-size: var(--fs-sm);
 }
 
@@ -91,13 +91,11 @@
   color: var(--primary-color);
   transform: scale(1.2);
 }
-.bottomBar{
+.bottomBar {
   font-size: var(--fs-xs);
 }
 @media screen and (max-width: 768px) {
-  .footer{
+  .footer {
     padding: 64px 0;
- 
   }
-  
 }

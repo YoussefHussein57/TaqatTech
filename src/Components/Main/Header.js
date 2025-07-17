@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import vector from "../../Assets/Logo/Vector.svg";
-import Button from "../Custom/Button";
+import Button from "../Custom/Button/Button";
 import "./header.css";
 
 export default function Header() {

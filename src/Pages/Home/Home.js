@@ -1,14 +1,16 @@
 import "./Home.css";
-import Button from "../../Components/Custom/Button";
+import Button from "../../Components/Custom/Button/Button";
 import HeroLogo from "../../Assets/home/Frame 578.png";
 import ServiceImg from "../../Assets/home/ServiceFrame.png";
 import quotations from "../../Assets/home/quotations.svg";
 import gear from "../../Assets/home/gear.png";
-import services from "../../data";
-import ServiceCard from "../../Components/Custom/ServiceCard";
-import NumbersCard from "../../Components/Custom/NumbersCard";
+import data from "../../data";
+import ServiceCard from "../../Components/Custom/ServiceCard/ServiceCard";
+import NumbersCard from "../../Components/Custom/NumbersCard/NumbersCard";
 import { useState } from "react";
 import { motion } from "framer-motion";
+
+
 
 const testimonials = [
   {
@@ -27,6 +29,9 @@ const testimonials = [
 ];
 
 export default function Home() {
+
+  const services = data.services;
+
   const logos = Array.from({ length: 7 }, (_, i) =>
     require(`../../Assets/home/AgenciesLogos/Logos0${i + 1}.svg`)
   );

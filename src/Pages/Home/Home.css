@@ -30,7 +30,7 @@
 .HeroPara {
   color: var(--Color-Content-Secondary-Dark);
   font-size: var(--fs-md);
-  font-weight: 500;
+  font-weight: var(--fw-bold);
   max-width: 870px;
 }
 .agencies {
@@ -43,11 +43,11 @@
   .agenciesHeaderTxt {
     color: var(--Color-Content-Secondary-Default);
     font-size: var(--fs-sm);
-    font-weight: 500;
+    font-weight: var(--fw-bold);
 
     span {
       font-size: var(--fs-lg);
-      font-weight: 700;
+      font-weight: var(--fw-bolder);
       color: var(--Color-Content-Secondary-Dark);
     }
   }
@@ -72,18 +72,18 @@
 }
 .serviceLeftName {
   font-size: var(--fs-sm);
-  font-weight: 700;
+  font-weight: var(--fw-bolder);
 }
 .serviceLeftTitle {
   font-size: var(--fs-lg);
-  font-weight: 700;
+  font-weight: var(--fw-bolder);
   span {
     font-size: var(--fs-xl);
   }
 }
 .serviceLeftDesc {
   font-size: var(--fs-sm);
-  font-weight: 500;
+  font-weight: var(--fw-bold);
 }
 .numbers {
   max-width: var(--container-width);
@@ -94,7 +94,7 @@
 .BusinessTxt {
   color: var(--txt-extra-dark);
   font-size: var(--fs-xl);
-  font-weight: 700;
+  font-weight: var(--fw-bolder);
   line-height: 120%;
 
   span {
@@ -111,7 +111,7 @@
 .BusinessPara {
   color: var(--Color-Content-Tertiary1-Extra-dark);
   font-size: var(--fs-sm);
-  font-weight: 500;
+  font-weight: var(--fw-bold);
 }
 .testimonial-section {
   background: #fff;
@@ -155,8 +155,8 @@
   max-width: 745px;
   gap: 40px;
   h2 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bolder);
     span {
       background: linear-gradient(
         90deg,
@@ -169,13 +169,16 @@
     }
   }
   p {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
   }
 }
 .starter__right {
   max-width: 346px;
   max-height: 346px;
+  img {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .arrow-btn {
@@ -218,10 +221,10 @@
       width: 100%;
     }
   }
-  
+
   .serviceLeftTitle {
     font-size: var(--fs-md);
-    font-weight: 700;
+    font-weight: var(--fw-bolder);
     span {
       font-size: var(--fs-lg);
     }
@@ -244,7 +247,7 @@
       font-size: 28px;
     }
     p {
-      font-size: 18px;
+      font-size: var(--card-para-fs) ;
     }
   }
   .starter__right {
@@ -261,5 +264,8 @@
   }
   .agenciesLogos::-webkit-scrollbar {
     display: none;
+  }
+  .starter {
+    gap: 40px;
   }
 }

@@ -18,10 +18,15 @@
 
 
   --container-width:1400px;
+
+  --container-padding-sm: 20px;
   --container-padding: 32px;
+  --container-padding-lg:144px;
   --container-lg-padding: 48px;
 
   --container-gap:96px;
+  --container-gap-sm:40px;
+
 
 
   /* FontSizes */
@@ -38,4 +43,10 @@
   --card-para-fs:18px;
   --fs-normal:16px;
   --fs-xs:14px;
+
+
+  --fw-bolder:700;
+  --fw-bold:500;
+  --fw-medium:400;
+  --fw-regular:300;
 }

@@ -11,12 +11,11 @@
 .card__wrapper h5 {
   color: var(--txt-highlight);
   font-size: var(--card-title-fs);
-  font-weight: 700;
-}
+  font-weight: var(--fw-bolder);}
 .card__wrapper p {
   color: var(--txt-extra-dark);
   font-size: var(--card-para-fs);
-  font-weight: 500;
+  font-weight: var(--fw-bold);
 }
 @media (max-width:1330px) {
     .card__wrapper{
