@@ -7,7 +7,8 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-custom px-md-5"> {/* added px-4 for space on sides */}
       <div className="container gx-0">
-        <img src={vector} alt="logoImage" />
+        
+        <img src={vector} alt="logoImage" className="HeaderLogo" />
 
         <button
           className="navbar-toggler border-0"
@@ -69,7 +70,7 @@ export default function Header() {
           </ul>
 
           {/* Right-aligned */}
-          <form class="d-flex ms-auto" role="search"> {/* ms-auto pushes it to the end */}
+          <form class="d-flex ms-auto gap-3" role="search"> {/* ms-auto pushes it to the end */}
             <button className="langBtn border-0 text-center fw-medium">
               عربي
             </button>

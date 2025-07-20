@@ -106,7 +106,7 @@ export default function Home() {
               <div className="row row-cols-1 row-cols-md-2 g-4">
                 {services.map((service, index) => (
                   <div key={index} className="col">
-                    <ServiceCard {...service} />
+                    <ServiceCard {...service} className="d-flex  flex-column gap-3" />
                   </div>
                 ))}
               </div>
@@ -210,7 +210,7 @@ export default function Home() {
           </div>
         </section>
         <section className="d-flex flex-column align-items-center gap-4 p-5">
-          <div className="starter container d-flex flex-column flex-lg-row align-items-start">
+          <div className="starter container d-flex flex-column flex-lg-row align-items-start p-5">
             <div className="starter__left d-flex flex-column align-items-start order-2 order-lg-1">
               <h2 className="Starter__txt">
                 Unlock Your Business Potential with <span> TaqaTechno </span>
@@ -226,6 +226,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
       </div>
     </>
   );

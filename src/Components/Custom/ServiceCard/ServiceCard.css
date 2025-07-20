@@ -1,8 +1,39 @@
 .icon-box {
-  width: 40px;
-  height: 40px;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  background: var(--bg-primary) ; 
+  border-radius: 12px;
+}
+
+.icon-box-lg {
+  width: 82px;
+  height: 82px;
+  .iconSize{
+    font-size: 24px;
+  }
+}
+
+.icon-box-sm {
+  width: 48px;
+  height: 48px;
+   .iconSize{
+    font-size: 20px;
+  }
+}
+@media (max-width:768px) {
+  
+/* Small size for icon box */
+.icon-box-lg {
+  width: 64px;
+  height: 64px;
+  .iconSize{
+    font-size: 24px;
+  }
+}
+
+
+  
 }

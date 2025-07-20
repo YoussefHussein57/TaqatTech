@@ -37,8 +37,7 @@
   gap: var(--container-gap);
   .OurStory__img {
     img {
-      width: 100%;
-      height: 450px;
+      height: 600px;
       border-radius: 32px;
     }
   }
@@ -51,6 +50,7 @@
       font-size: var(--fs-xl);
       font-weight: var(--fw-bolder);
       line-height: 120%;
+      margin-bottom: 120px;
     }
   }
   .OurStory__desc {
@@ -73,8 +73,8 @@
     }
   }
 }
-.values{
-    padding: var(--container-padding-lg);
+.values {
+  padding: var(--container-padding-lg);
 }
 .values__container {
   width: var(--container-width);
@@ -91,21 +91,89 @@
     font-weight: var(--fw-medium);
     line-height: 150%;
   }
-  .darkBg{
-    background: var(--bg-secondary) ;
+  .darkBg {
+    background: var(--bg-secondary);
     border-radius: 24px;
+  }
+ 
+  .valuesHover {
+    transition: all 0.3s ease-in-out;
+  }
+  .valuesHover:hover {
+    transform: scale(1.05);
+        box-shadow: 2px 2px 2px gray;
 
   }
-  .fontShape{
+  .fontShape {
     display: flex !important;
-    h6{
-        font-size: var(--fs-md);
-        font-weight: var(--fw-bolder);
+    width: 572px;
+    h6 {
+      font-size: var(--fs-md);
+      font-weight: var(--fw-bolder);
     }
-    p{
-        font-size: var(--card-para-fs);
-        font-weight: var(--fw-medium);
+    p {
+      font-size: var(--card-para-fs);
+      font-weight: var(--fw-medium);
     }
+  }
+}
+.leadership {
+  padding: var(--container-padding-lg);
+  .leadership__container {
+    max-width: var(--container-width);
+    padding: 0 var(--container-padding);
+    gap: var(--container-gap);
+  }
+
+  .leaders__images {
+    gap: 24px;
+    img {
+      width: 294px;
+      height: 294px;
+      border-radius: 50%;
+    }
+    h5 {
+      font-size: var(--fs-sm);
+      font-weight: var(--fw-bolder);
+      color: var(--txt-extra-dark);
+    }
+    p {
+      font-size: var(--fs-normal);
+      color: var(--txt-highlight);
+      font-weight: var(--fw-medium);
+    }
+  }
+}
+.title {
+  color: var(--txt-extra-dark);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bolder);
+  line-height: 120%;
+}
+.desc {
+  font-size: var(--card-para-fs);
+  color: var(--txt-extra-dark);
+  font-weight: var(--fw-medium);
+  line-height: 150%;
+  max-width: 660px;
+}
+.certifications {
+  padding: var(--container-padding-lg);
+}
+.fullCards {
+  border-radius: 24px !important;
+  width: 340px;
+  height: 360px !important;
+
+  h5 {
+    font-size: var(--fs-sm);
+    color: var(--txt-extra-dark);
+    font-weight: var(--fw-bolder);
+  }
+  p {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-medium);
+    color: var(--txt-extra-dark);
   }
 }
 
@@ -136,14 +204,15 @@
   }
 
   .OurStory {
-    padding: 0 var(--container-padding-sm);
-    gap: var(--container-gap-sm);
+    padding: 0 var(--container-padding-sm) !important;
   }
   .OurStory__container {
     max-width: 360px !important;
+    gap: var(--container-gap-sm);
   }
   .OurStory__title {
     font-size: var(--fs-lg) !important;
+    margin-bottom: 10px !important;
   }
   .OurStory__desc {
     h3 {
@@ -159,7 +228,60 @@
   .OurStory__img {
     img {
       width: 100%;
+      height: auto !important;
       height: 225px;
     }
+  }
+  .fontShape {
+    width: 280px !important;
+    h6 {
+      font-size: var(--fs-sm) !important;
+    }
+    p {
+      font-size: var(--fs-normal) !important;
+    }
+  }
+
+  .values {
+    padding: var(--container-padding-sm) !important;
+  }
+  .values__container {
+    gap: var(--container-gap-sm);
+  }
+  .values__txt {
+    width: 320px !important;
+  }
+  .values__title {
+    font-size: var(--fs-lg) !important;
+  }
+  .values__container p {
+    font-size: var(--fs-normal) !important;
+  }
+  .leadership {
+    padding: var(--container-padding-sm);
+    .leadership__container {
+      padding: 0 var(--container-padding-sm) !important;
+      gap: var(--container-gap-sm) !important;
+    }
+  }
+  .desc {
+    font-size: var(--fs-normal) !important;
+  }
+  .title {
+    font-size: var(--fs-lg) !important;
+  }
+  .leaders__images {
+    gap: 12px !important;
+    img {
+      width: 180px !important;
+      height: 180px !important;
+    }
+  }
+  .certifications {
+    padding: var(--container-padding-sm);
+  }
+  .fullCards {
+    width: 280px;
+    height: 310px !important;
   }
 }
