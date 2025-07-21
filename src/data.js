@@ -5,6 +5,12 @@ import {
   faPuzzlePiece,
   faMagnifyingGlassChart,
   faHeadset,
+  faCheckCircle,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
+
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -12,6 +18,10 @@ import {
   faThumbsUp,
   faEye,
 } from "@fortawesome/free-regular-svg-icons";
+
+import Rocket from "./Assets/Services/Icons/Rocket.svg";
+import Gear from "./Assets/Services/Icons/Gear.svg";
+import Book from "./Assets/Services/Icons/Book.svg";
 
 const data = {
   services: [
@@ -107,6 +117,89 @@ const data = {
       description: "Information security management certification",
     },
   ],
+  cores: [
+    {
+      img: Rocket,
+      title: "Implementation",
+      description:
+        "End-to-end Odoo implementation services designed to align with your business objectives.",
+    },
+    {
+      img: Gear,
+      title: "Development",
+      description:
+        "Custom module development and seamless system integration to enhance functionality.",
+    },
+    {
+      img: Book,
+      title: "Training",
+      description:
+        "In-depth training programs to equip your team with the skills needed to maximize Odoo’s potential.",
+    },
+  ],
+  CoreServices: [
+    {
+      order: "01",
+      title: "Analysis",
+      description: "Understanding your business needs and goals.",
+    },
+    {
+      order: "02",
+      title: "Planning",
+      description: "Developing a strategic implementation roadmap.",
+    },
+    {
+      order: "03",
+      title: "Execution",
+      description: "Deploying and configuring the solution efficiently.",
+    },
+    {
+      order: "04",
+      title: "Support",
+      description: "Providing ongoing maintenance and assistance.",
+    },
+  ],
+
+
+ plans : [
+  {
+    key: "basic",
+    name: "Basic",
+    price: "$499",
+    features: [
+      "Email Support",
+      "Bug Fixes",
+      "Monthly Updates",
+    ],
+    active: false,
+  },
+  {
+    key: "professional",
+    name: "Professional",
+    price: "$999",
+    features: [
+      "Priority Support",
+      "24h Response Time",
+      "Custom Development",
+      "Weekly Updates",
+    ],
+    active: true, // ← this one is colored differently
+  },
+  {
+    key: "enterprise",
+    name: "Enterprise",
+    price: "Custom",
+    features: [
+      "24/7 Support",
+      "Immediate Response",
+      "Dedicated Team",
+      "Custom Solutions",
+    ],
+    active: false,
+  },
+]
+
+
 };
 
 export default data;

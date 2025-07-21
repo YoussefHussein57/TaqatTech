@@ -74,7 +74,7 @@ export default function About() {
       </section>
       <section className="values">
         <div className="values__container container d-flex flex-column flex-xl-row  align-items-center align-items-xl-start justify-content-center">
-          <div className="values__txt d-flex flex-column align-items-start gap-4 ps-3">
+          <div className="values__txt d-flex flex-column align-items-start gap-4">
             <h2 className="values__title">Our Values</h2>
             <p>
               Over the years, we have evolved into a leading Odoo implementation

@@ -1,0 +1,137 @@
+section {
+  padding: var(--container-padding-lg);
+}
+section > div {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  color: var(--txt-extra-dark);
+}
+
+.services__container {
+  h4 {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+  }
+  p {
+    font-size: var(--card-para-fs);
+    font-weight: var(--fw-medium);
+    color: var(--Color-Content-Tertiary1-Extra-dark);
+  }
+}
+.coreServices__container {
+  h2 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bolder);
+  }
+  p {
+    font-size: var(--card-para-fs);
+    font-weight: var(--fw-medium);
+    color: var(--Color-Content-Tertiary1-Extra-dark);
+  }
+}
+.order__container {
+  h2 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bolder);
+  }
+}
+.order__number {
+  background: var(--txt-highlight);
+  h3 {
+    font-size: 40px;
+    font-weight: var(--fw-medium);
+  }
+  h5 {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bolder);
+  }
+  p {
+    font-size: var(--fs-normal);
+  }
+}
+.industry-pill {
+  background-color: #f3f4f6; /* light gray */
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.industries__container{
+  h2{
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bolder);
+  }
+  p{
+    font-size: var(--fs-sm);
+  }
+  span{
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bolder);
+  }
+}
+/* src/components/SupportPlans/SupportPlans.css */
+
+.plan-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+}
+
+.plan-card.active {
+  border-color: var(--primary-color);
+}
+
+.plan-badge {
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+@media (max-width: 999px) {
+  section {
+    padding: var(--container-padding-sm);
+  }
+  section > div {
+    padding: var(--container-padding-sm);
+  }
+  .services__container {
+    h2 {
+      font-size: 40px !important;
+    }
+    h4 {
+      font-size: var(--fs-sm);
+    }
+    p {
+      font-size: var(--fs-normal) !important;
+    }
+  }
+  .coreServices__container {
+    h2 {
+      font-size: var(--fs-lg) !important;
+    }
+  }
+  .order__container {
+    h2 {
+      font-size: var(--fs-lg);
+    }
+  }
+  .industries__container{
+  h2{
+    font-size: var(--fs-lg);
+  }
+  p{
+    font-size: var(--fs-normal);
+  }
+  span{
+    font-size: var(--fs-normal);
+  }
+}
+}
