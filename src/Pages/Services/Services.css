@@ -67,12 +67,19 @@ section > div {
     font-weight: var(--fw-bolder);
   }
 }
-/* src/components/SupportPlans/SupportPlans.css */
+.support-title{
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bolder);
+}
+.support-txt{
+  font-size: var(--fs-md);
+  color: var(--Color-Content-Tertiary1-Extra-dark);
+}
 
 .plan-card {
   border: 1px solid #dee2e6;
-  border-radius: 0.75rem;
   transition: transform 0.2s;
+  color: var(--Color-Content-Tertiary1-Extra-dark);
 }
 
 .plan-card:hover {
@@ -80,20 +87,34 @@ section > div {
 }
 
 .plan-card.active {
-  border-color: var(--primary-color);
+  border-color: var(--txt-highlight);
 }
 
-.plan-badge {
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
-}
 
 .plan-price {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--txt-extra-dark);
 }
-
+.badge{
+  width: fit-content;
+}
+.plan-enterprise{
+  .badge{
+    background: var(--bg-secondary);
+  }
+}
+.plan-professional{
+    .badge{
+    background: var(--txt-highlight);
+  }
+}
+.plan-basic{
+    .badge{
+    background:#f5f5f5;
+    color: #000000;
+  }
+}
 
 @media (max-width: 999px) {
   section {
@@ -133,5 +154,11 @@ section > div {
   span{
     font-size: var(--fs-normal);
   }
+}
+.support-title{
+  font-size: var(--fs-lg);
+}
+.support-txt{
+  font-size: var(--fs-sm);
 }
 }

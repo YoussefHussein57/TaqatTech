@@ -4,22 +4,22 @@
 
 .card__wrapper {
   width: 320px;
-  height: 220px;
+  height: auto;
   padding: var(--container-padding);
   border-radius: 24px;
 }
 .card__wrapper h5 {
   color: var(--txt-highlight);
   font-size: var(--card-title-fs);
-  font-weight: var(--fw-bolder);}
+  font-weight: var(--fw-bolder);
+}
 .card__wrapper p {
   color: var(--txt-extra-dark);
   font-size: var(--card-para-fs);
   font-weight: var(--fw-bold);
 }
-@media (max-width:1330px) {
-    .card__wrapper{
-        width: 280px;
-    }
-    
+@media (max-width: 1330px) {
+  .card__wrapper {
+    width: 280px;
+  }
 }

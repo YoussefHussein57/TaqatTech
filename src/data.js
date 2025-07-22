@@ -9,9 +9,7 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-
-} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-solid-svg-icons";
 
 import {
   faLightbulb,
@@ -160,46 +158,48 @@ const data = {
     },
   ],
 
-
- plans : [
-  {
-    key: "basic",
-    name: "Basic",
-    price: "$499",
-    features: [
-      "Email Support",
-      "Bug Fixes",
-      "Monthly Updates",
-    ],
-    active: false,
-  },
-  {
-    key: "professional",
-    name: "Professional",
-    price: "$999",
-    features: [
-      "Priority Support",
-      "24h Response Time",
-      "Custom Development",
-      "Weekly Updates",
-    ],
-    active: true, // ← this one is colored differently
-  },
-  {
-    key: "enterprise",
-    name: "Enterprise",
-    price: "Custom",
-    features: [
-      "24/7 Support",
-      "Immediate Response",
-      "Dedicated Team",
-      "Custom Solutions",
-    ],
-    active: false,
-  },
-]
-
-
+  plans: [
+    {
+      key: "basic",
+      name: "Basic",
+      price: "$499",
+      features: ["Email Support", "Email Support","Bug Fixes", "Monthly Updates"],
+      active: false,
+      btnText: "Subscribe Now",
+      variantBtn:"",
+      className: "plan-basic",
+    },
+    {
+      key: "professional",
+      name: "Professional",
+      price: "$999",
+      features: [
+        "Priority Support",
+        "24h Response Time",
+        "Custom Development",
+        "Weekly Updates",
+      ],
+      active: true, // ← this one is colored differently
+      btnText: "Subscribe Now",
+      variantBtn:"",
+      className: "plan-professional",
+    },
+    {
+      key: "enterprise",
+      name: "Enterprise",
+      price: "Custom",
+      features: [
+        "24/7 Support",
+        "Immediate Response",
+        "Dedicated Team",
+        "Custom Solutions",
+      ],
+      active: false,
+      btnText: "Contact Us",
+      variantBtn:"outline",
+      className: "plan-enterprise",
+    },
+  ],
 };
 
 export default data;

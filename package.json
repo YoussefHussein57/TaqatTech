@@ -16,6 +16,7 @@
     "framer-motion": "^12.23.6",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
     "react-scripts": "5.0.1",
@@ -46,6 +47,4 @@
       "last 1 safari version"
     ]
   }
-
-
 }

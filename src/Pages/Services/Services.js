@@ -1,10 +1,11 @@
 import "./Services.css";
 import Button from "../../Components/Custom/Button/Button";
 import HeroImage from "../../Assets/Services/HeroServices/Hero.png";
+import CheckImage from "../../Assets/AboutUS/check-badge.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import data from "../../data";
 import {
-  faCheckCircle,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +18,7 @@ export default function Services() {
     <>
       <section className="ourServices">
         <div className="container services__container">
-          <div className="d-flex flex-column align-items-center gap-2 gap-lg-5  text-center services__container-txt ">
+          <div className="d-flex flex-column align-items-center gap-2 gap-lg-4  text-center services__container-txt ">
             <div
               className="d-flex flex-column gap-2 gap-lg-4"
               style={{ maxWidth: "882px" }}
@@ -52,7 +53,7 @@ export default function Services() {
       <section className="coreServices">
         <div className="container">
           <div className="d-flex flex-column align-items-start gap-2 gap-lg-5 coreServices__container">
-            <div className="d-flex flex-column align-items-start gap-3 mb-5">
+            <div className="d-flex flex-column align-items-start  gap-3 mb-5">
               <h2>Core Services</h2>
               <p style={{ maxWidth: "570px" }}>
                 Our core services are designed to help businesses seamlessly
@@ -87,7 +88,7 @@ export default function Services() {
             <div className="col-12 text-center mb-2 mb-lg-5">
               <h2 className="mb-2 mb-lg-5">Core Services</h2>
             </div>
-            <div className="orders__numbers d-flex flex-column flex-lg-row gap-2 mt-2 mt-lg-5 ">
+            <div className="orders__numbers d-flex flex-column flex-lg-row gap-4 mt-2 mt-lg-4 ">
               {CoreServices.map((coreService, index) => (
                 <div
                   key={index}
@@ -106,9 +107,9 @@ export default function Services() {
       </section>
       <section>
         <div className="container">
-          <div className="row align-items-center gap-5 industries__container m-0">
+          <div className="row align-items-start gap-5 industries__container ">
             {/* Left Text Column */}
-            <div className=" col-lg-6 mb-4 mb-lg-0">
+            <div className=" col-lg-6">
               <h2 className="fw-bold text-dark">Industries We Serve</h2>
               <p >
                 We deliver tailored Odoo solutions across various industries,
@@ -118,7 +119,7 @@ export default function Services() {
 
             {/* Right Tags Column */}
             <div className="col-lg-5">
-              <div className="d-flex flex-wrap gap-3" >
+              <div className="d-flex flex-wrap gap-4" >
                 {[
                   "Manufacturing",
                   "Retail",
@@ -127,7 +128,7 @@ export default function Services() {
                   "Professional Services",
                   "Distribution",
                 ].map((industry, index) => (
-                  <span key={index} className="industry-pill px-3 py-2">
+                  <span key={index} className="industry-pill px-3 py-3">
                     <strong >{industry}</strong>
                   </span>
                 ))}
@@ -137,9 +138,9 @@ export default function Services() {
         </div>
       </section>
         <section className="support-plans py-5">
-      <div className="container text-center mb-5">
-        <h2 className="fw-bold">Support Plans</h2>
-        <p className="text-secondary">
+      <div className="d-flex flex-column align-items-center text-center mb-5">
+        <h2 className="support-title">Support Plans</h2>
+        <p className="support-txt" style={{maxWidth:"766px"}}>
           Choose a support plan that aligns with your business needs,
           ensuring continuous system optimization and expert assistance.
         </p>
@@ -149,26 +150,29 @@ export default function Services() {
         <div className="row g-4">
           {plans.map((plan) => (
             <div key={plan.key} className="col-12 col-md-4">
-              <div className={`card plan-card h-100 ${plan.active ? "active" : ""}`}>
-                <div className="card-body d-flex flex-column">
+              <div className={`card plan-card h-100  rounded-4 ${plan.active ? "active" : ""} ${plan.className} p-2`}>
+                <div className="card-body d-flex flex-column ">
                   {/* Plan Badge */}
-                  <span className={`badge plan-badge mb-3 ${plan.active ? "bg-primary text-white" : "bg-light"}`}>
+                  <div className="border-bottom d-flex flex-column gap-4 mb-3">
+
+                  <span className={`badge p-2 mb-3`}>
                     {plan.name}
                   </span>
 
                   {/* Price */}
-                  <h3 className={`plan-price mb-3 ${plan.active ? "text-primary" : "text-dark"}`}>
+                  <h3 className={`plan-price mb-3`}>
                     {plan.price}
                   </h3>
+                  </div>
 
-                  <hr />
 
                   {/* Features */}
-                  <ul className="list-unstyled flex-grow-1 mb-4">
+                  <ul className="list-unstyled d-flex flex-column flex-grow-1 mb-4 gap-4 ">
                     {plan.features.map((f, i) => (
-                      <li key={i} className="d-flex align-items-center mb-2">
-                        <FontAwesomeIcon icon={faCheckCircle} className={`me-2 ${plan.active ? "text-primary" : "text-secondary"}`}/>
-                        <span className={plan.active ? "text-dark" : "text-secondary"}>{f}</span>
+                      <li key={i} className="d-flex align-items-center ">
+                        <img src={CheckImage} alt="Check Badge" />
+
+                        <span className="mx-3" style={{fontSize:"18px"}}>{f}</span>
                       </li>
                     ))}
                   </ul>
@@ -176,11 +180,11 @@ export default function Services() {
                   {/* CTA */}
                   <Button
                     path={""}
-                    variant="outline"
-                    className={`mt-auto d-flex justify-content-between ${plan.active ? "btn-primary" : "btn-outline-primary"}`}
+                    variant={plan.variantBtn}
+                    className={`mt-3 d-flex justify-content-between`}
                   >
-                    {plan.active ? "Subscribe now" : "Contact us"}{" "}
-                    <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                    {plan.btnText}{" "}
+                    <FontAwesomeIcon icon={faArrowRight} />
                   </Button>
                 </div>
               </div>

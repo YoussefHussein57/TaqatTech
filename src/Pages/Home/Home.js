@@ -10,8 +10,6 @@ import NumbersCard from "../../Components/Custom/NumbersCard/NumbersCard";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-
-
 const testimonials = [
   {
     text: "The implementation process was smooth and professional. Our productivity has increased by 40% since switching to Odoo.",
@@ -29,7 +27,6 @@ const testimonials = [
 ];
 
 export default function Home() {
-
   const services = data.services;
 
   const logos = Array.from({ length: 7 }, (_, i) =>
@@ -106,7 +103,10 @@ export default function Home() {
               <div className="row row-cols-1 row-cols-md-2 g-4">
                 {services.map((service, index) => (
                   <div key={index} className="col">
-                    <ServiceCard {...service} className="d-flex  flex-column gap-3" />
+                    <ServiceCard
+                      {...service}
+                      className="d-flex  flex-column gap-3"
+                    />
                   </div>
                 ))}
               </div>
@@ -119,7 +119,7 @@ export default function Home() {
               <img
                 src={ServiceImg}
                 alt="service"
-                style={{ maxWidth: "451px"}}
+                style={{ maxWidth: "451px" }}
               />
             </div>
           </div>
@@ -137,22 +137,26 @@ export default function Home() {
             </div>
             <div className="d-flex gap-3 flex-column flex-xl-row">
               <NumbersCard
-                title="500+"
+                end={500}
+                suffix="+"
                 txt="Successful Implementations"
                 className={"light text-nowrap"}
               />
               <NumbersCard
-                title="15+"
+                end={15}
+                suffix="+"
                 txt="Years of Experience"
                 className={"light"}
               />
               <NumbersCard
-                title="98%"
+                end={98}
+                suffix="%"
                 txt="Client Satisfaction"
                 className={"light"}
               />
               <NumbersCard
-                title="24/7"
+                end={24}
+                suffix="/7"
                 txt="Support Available"
                 className={"light"}
               />
@@ -226,7 +230,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </div>
     </>
   );
