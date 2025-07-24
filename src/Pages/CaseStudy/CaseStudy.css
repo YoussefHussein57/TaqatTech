@@ -13,7 +13,7 @@
     .background-like{
         background: #fff;
     }
-    h3 {
+    h5 {
       color: var(--txt-highlight);
       font-size: var(--fs-lg);
       font-weight: var(--fw-bolder);
@@ -34,6 +34,7 @@
         h4{
             font-size: var(--fs-lg);
             font-weight: var(--fw-bolder);
+           
         }
         p{
             font-size: var(--fs-sm) ;
@@ -42,6 +43,17 @@
         
     }
 }
+.industry__impact-card{
+  h4{
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bolder);
+     max-width: 330px ;
+  }
+  li{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+  }
+} 
 
 @media (max-width:999px) {
 
@@ -77,5 +89,13 @@
             font-size: var(--fs-normal) !important;
         }
     }
+    .industry__impact-card{
+  h4{
+    font-size: var(--fs-sm);
+  }
+  li{
+    font-size: var(--card-para-fs);
+  }
+} 
     
 }

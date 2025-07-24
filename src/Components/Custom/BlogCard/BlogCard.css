@@ -6,7 +6,31 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
 }
+.top-img{
+  height: 270px !important;
+      object-fit: contain;
 
+}
+
+.read-more-link {
+  color: var(--txt-highlight) !important;
+  border-color: var(--txt-highlight) !important;
+  transition: all .5s ease-in-out;
+}
 .read-more-link:hover {
-  text-decoration: underline;
+  color: var(--Color-Content-Secondary-Default) !important;
+  border-color: var(--Color-Content-Secondary-Default) !important;
+}
+
+@media (max-width:1000px) {
+  .blog-card {
+    height: 400px !important;
+     max-width: 280px !important;
+    
+  }
+  .top-img{
+    height: 160px !important;
+   
+  }
+  
 }

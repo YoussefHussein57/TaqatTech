@@ -1,0 +1,37 @@
+.btns {
+  /* Only top & bottom borders, in your custom color */
+  border-top: 1px solid #2E1E51;
+  border-bottom: 1px solid #2E1E51;
+}
+.search{
+    border: 1px solid #E5E7EB !important;
+    
+}
+
+.filter-btn {
+  background: transparent;
+  color: #2E1E51;
+  border: 1px solid #2E1E51;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+.filter-btn:hover {
+  background-color: #2E1E51;
+  color: #fff;
+}
+
+/* Active (selected) button style */
+.filter-btn.active {
+  background-color: #2E1E51;
+  color: #fff;
+}
+
+.search-group .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+

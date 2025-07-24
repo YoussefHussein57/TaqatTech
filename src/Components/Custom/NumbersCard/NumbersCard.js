@@ -8,7 +8,7 @@ function NumbersCard({ txt, className = "", end, suffix }) {
     <div ref={ref} className={`card__wrapper ${className} border-0 `}>
       <div className="d-flex flex-column justify-content-between h-100 gap-3 gap-lg-5">
         <h5 className="title">
-          {inView ? <CountUp start={0} redraw={true} end={end} duration={2} /> : 0}{" "}
+          {inView ? <CountUp start={0} redraw={true} end={end} duration={3} /> : 0}{" "}
           {suffix}
         </h5>
         <p className="desc">{txt}</p>

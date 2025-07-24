@@ -5,8 +5,6 @@ import {
   faPuzzlePiece,
   faMagnifyingGlassChart,
   faHeadset,
-  faCheckCircle,
-  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {} from "@fortawesome/free-solid-svg-icons";
@@ -163,10 +161,15 @@ const data = {
       key: "basic",
       name: "Basic",
       price: "$499",
-      features: ["Email Support", "Email Support","Bug Fixes", "Monthly Updates"],
+      features: [
+        "Email Support",
+        "Email Support",
+        "Bug Fixes",
+        "Monthly Updates",
+      ],
       active: false,
       btnText: "Subscribe Now",
-      variantBtn:"",
+      variantBtn: "",
       className: "plan-basic",
     },
     {
@@ -181,7 +184,7 @@ const data = {
       ],
       active: true, // ← this one is colored differently
       btnText: "Subscribe Now",
-      variantBtn:"",
+      variantBtn: "",
       className: "plan-professional",
     },
     {
@@ -196,9 +199,90 @@ const data = {
       ],
       active: false,
       btnText: "Contact Us",
-      variantBtn:"outline",
+      variantBtn: "outline",
       className: "plan-enterprise",
     },
+  ],
+  successStories: [
+    {
+      image: require("./Assets/CaseStudy/success_stories/andrew-power1.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Streamlined operations with Odoo Project Management",
+    },
+    {
+      image: require("./Assets/CaseStudy/success_stories/andrew-power2.png"),
+      tag: "Retail",
+      tagBg: "#E0DEE6",
+      title: "Retail Pro",
+      description: "Transformed inventory management with Odoo",
+    },
+    {
+      image: require("./Assets/CaseStudy/success_stories/andrew-power3.png"),
+      tag: "Healthcare",
+      tagBg: "#D1F0F2",
+      title: "HealthTech Inc.",
+      description: "Improved patient care with Odoo Healthcare",
+    },
+  ],
+  stories: [
+
+    {
+      image: require("./Assets/BlogCard/Blogs/christin-hume1.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/pexels-mikhail2.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/pexels-fauxel3.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/pexels-fauxels4.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/christina-wocintechchat5.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/pexels-divinetechygirl6.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/jason-goodman7.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/bruce-mars8.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+    {
+      image: require("./Assets/BlogCard/Blogs/pexels-canvastu9.png"),
+      tag: "Technology",
+      title: "TechCorp Solutions",
+      description: "Key strategies and best practices for a successful Odoo implementation project.Key strategies and best practices for a successful Odoo implementation project.",
+    },
+
+   
   ],
 };
 
