@@ -1,0 +1,27 @@
+  .blog-insights {
+    h2{
+
+        font-size: var(--fs-xl);
+    }
+  }
+  .img-title{
+    font-size: var(--fs-xxl);
+  }
+
+@media (max-width:1000px) {
+  .blog-insights{
+    h2{
+        font-size: 40px !important;
+      
+    }
+    h4{
+        font-size: var(--fs-normal) !important;
+    }
+  }
+  .img-title{
+    font-size: var(--fs-lg) !important;
+  }
+  .featured-title{
+    font-size: var(--fs-md) !important;
+  }
+}

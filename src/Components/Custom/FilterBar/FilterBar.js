@@ -6,9 +6,9 @@ function FilterBar({ filter, setFilter, onSearch }) {
   const options = ["All", "Odoo tips", "Implementation", "Personal growth"];
 
   return (
-    <div className="btns d-flex align-items-center justify-content-between p-3">
+    <div className="btns  d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between p-3">
       {/* Filter buttons */}
-      <div className="d-flex align-items-center gap-2 ">
+      <div className="d-flex align-items-center gap-2 order-2 order-lg-1 ">
         {options.map((name) => (
           <button
             key={name}
@@ -22,7 +22,7 @@ function FilterBar({ filter, setFilter, onSearch }) {
       </div>
 
       {/* Search input with icon */}
-      <div className="input-group search-group search w-auto rounded-5" style={{borderColor:"#2E1E51"}}>
+      <div className="input-group search-group search w-auto rounded-5  order-1 order-lg-2 mb-4 mb-lg-0" style={{borderColor:"#2E1E51"}}>
         <span className="input-group-text bg-white border-0 rounded-5">
           <FontAwesomeIcon icon={faSearch} />
         </span>

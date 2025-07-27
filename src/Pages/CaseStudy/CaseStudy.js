@@ -11,6 +11,7 @@ import BlogCard from "../../Components/Custom/BlogCard/BlogCard";
 import data from "../../data";
 import CountUp from "react-countup";
 import { useInView } from "../../Hooks/useInView";
+import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 function CaseStudy() {
   const [ref, inView] = useInView({ threshold: 0.6 });
@@ -182,7 +183,9 @@ function CaseStudy() {
                 More Success Stories{" "}
               </h2>
             </div>
-            <div className="d-flex justify-content-center align-items-start gap-2 gap-lg-4 flex-column flex-lg-row">
+            <div
+              className="d-flex justify-content-center align-items-start gap-2 gap-lg-4 flex-column flex-lg-row "
+            >
               {successStories.map((story, index) => (
                 <div key={index}>
                   <BlogCard

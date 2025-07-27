@@ -1,0 +1,146 @@
+/* ----------------------------------------------------------------------------------
+   TYPOGRAPHY & COLORS
+---------------------------------------------------------------------------------- */
+
+/* Breadcrumb */
+.breadcrumb a {
+  color: var(--txt-extra-dark);
+  text-decoration: none;
+  font-size: var(--fs-xs);
+}
+.breadcrumb .text-secondary {
+  color: var(--Color-Content-Tertiary1-Extra-dark);
+}
+
+/* Page title (40px / 700 / 130%) */
+.bd-title {
+  color: var(--txt-extra-dark);
+  font-size: 40px;
+  font-weight: var(--fw-bolder);
+  line-height: 130%;
+}
+
+/* Author name & date */
+.bd-author {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-medium);
+  color: var(--txt-extra-dark);
+}
+.bd-date {
+  font-size: var(--fs-xs);
+  color: var(--Color-Content-Secondary-Dark);
+}
+
+/* More Stories title (32px / 700 / 130%) */
+.bd-more-title {
+  color: var(--txt-extra-dark);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bolder);
+  line-height: 130%;
+  margin-bottom: var(--container-gap-sm);
+}
+
+/* ----------------------------------------------------------------------------------
+   IMAGES & ICONS
+---------------------------------------------------------------------------------- */
+
+/* Avatar & Hero */
+.bd-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.bd-hero {
+  max-width: 880px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+}
+
+/* Social icons (both top & bottom) */
+.bd-social-icon {
+  width: var(--fs-lg);
+  height: var(--fs-lg);
+  color: var(--txt-extra-dark);
+  cursor: pointer;
+}
+.bd-share-icons {
+  margin: var(--container-padding) 0;
+}
+
+/* ----------------------------------------------------------------------------------
+   MARKDOWN BODY
+---------------------------------------------------------------------------------- */
+
+.bd-body {
+  color: var(--txt-extra-dark);
+  font-size: var(--card-para-fs);
+  font-weight: var(--fw-medium);
+  line-height: 150%;
+}
+
+/* 32px bottom gutter on every paragraph */
+.bd-body p {
+  margin-bottom: var(--container-padding);
+}
+.bd-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* 3rd & 6th paragraphs bump up to 24px/140% */
+.bd-body p:nth-of-type(3),
+.bd-body p:nth-of-type(6) {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  line-height: 140%;
+}
+
+/* Headings within the body (24px / 500 / 140%) */
+.bd-body h2,
+.bd-body h3,
+.bd-body h4 {
+  color: var(--txt-extra-dark);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  line-height: 140%;
+  margin: var(--container-gap-sm) 0 var(--container-padding) 0;
+}
+
+/* Blockquotes */
+.bd-body blockquote {
+  border-left: 4px solid var(--border-dark);
+  padding-left: var(--container-padding-sm);
+  margin: var(--container-padding) 0;
+  font-style: italic;
+  color: var(--Color-Content-Tertiary1-Extra-dark);
+}
+
+/* ----------------------------------------------------------------------------------
+   MORE SUCCESS STORIES SECTION
+---------------------------------------------------------------------------------- */
+
+.bd-more-section {
+  background-color: var(--bg-accent);
+}
+
+/* Card overrides are in BlogCard.css; no need to repeat them here */
+
+/* Footer avatar under bottom icons */
+.bd-author-only-wrap {
+  margin-bottom: var(--container-padding);
+}
+.bd-author-only {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-medium);
+  color: var(--txt-extra-dark);
+}
+
+@media (max-width:1000px) {
+    .bd-title {
+  font-size: 28px;
+}
+
+
+    
+}
