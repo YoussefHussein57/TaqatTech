@@ -1,5 +1,4 @@
 // src/hooks/useInView.js
-import { option } from "framer-motion/client";
 import { useRef, useEffect, useState } from "react";
 
 export function useInView(options = {}) {
@@ -17,7 +16,7 @@ export function useInView(options = {}) {
     );
     observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [ref,option]);
+  }, [options]);
 
   return [ref, inView];
 }

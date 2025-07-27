@@ -30,7 +30,7 @@ export default function Blog() {
         if (searchTerm === "") return true;
         return story.title.toLowerCase().includes(searchTerm.toLowerCase());
       });
-  }, [filter, searchTerm]);
+  }, [filter, searchTerm,stories]);
   return (
     <>
       <section>

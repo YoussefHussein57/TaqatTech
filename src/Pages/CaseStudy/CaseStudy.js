@@ -11,7 +11,6 @@ import BlogCard from "../../Components/Custom/BlogCard/BlogCard";
 import data from "../../data";
 import CountUp from "react-countup";
 import { useInView } from "../../Hooks/useInView";
-import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 function CaseStudy() {
   const [ref, inView] = useInView({ threshold: 0.6 });
