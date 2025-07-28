@@ -9,9 +9,11 @@ import BlogDetails from './Pages/BlogDetails/BlogDetails';
 import Career from './Pages/Career/Career';
 import Case from './Pages/CaseStudy/CaseStudy';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import GetStarted from './Pages/GetStarted/GetStarted';
 import Services from './Pages/Services/Services';
 import Header from './Components/Main/Header';
 import Footer from './Components/Main/Footer';
+
 
 
 
@@ -31,6 +33,8 @@ function App() {
       <Route path='/case' element={<Case />} />
       <Route path='/contactUs' element={<ContactUs />} />
       <Route path='/services' element={<Services />} />
+      <Route path='/Get-started' element={<GetStarted />} />
+
     </Routes>
     <Footer />
     </>

@@ -1,5 +1,5 @@
-import React from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +15,10 @@ import "./BlogDetails.css";
 export default function BlogDetails() {
   const { id } = useParams();
   const post = data.stories.find((p) => p.id.toString() === id);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, [id]);
   if (!post) return <Navigate to="/blog" replace />;
 
   const socialIcons = [faFacebookF, faYoutube, faXTwitter, faInstagram];
@@ -27,7 +31,6 @@ export default function BlogDetails() {
         <div className="container my-5">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-8">
-
               {/* Breadcrumb */}
               <nav className="breadcrumb mb-3">
                 <Link to="/blog">Blog</Link> &gt;{" "}
@@ -96,7 +99,6 @@ export default function BlogDetails() {
                 />
                 <div className="bd-author-only">{post.author.name}</div>
               </div>
-
             </div>
           </div>
         </div>
@@ -107,10 +109,7 @@ export default function BlogDetails() {
         <div className="container py-5">
           <div className="row justify-content-center">
             <div className="col-12 ">
-
-              <h2 className="bd-more-title mb-5">
-                More Success Stories
-              </h2>
+              <h2 className="bd-more-title mb-5">More Success Stories</h2>
 
               <div className="row g-4">
                 {more.map((p) => (
@@ -128,7 +127,6 @@ export default function BlogDetails() {
                   </div>
                 ))}
               </div>
-
             </div>
           </div>
         </div>

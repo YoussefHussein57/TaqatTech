@@ -58,7 +58,7 @@ export default function Home() {
           </div>
 
           <div className="buttons d-flex justify-content-center gap-3  ">
-            <Button path="/">Get Started</Button>
+            <Button path="/Get-started">Get Started</Button>
             <Button path="/" variant="outline">
               Learn More
             </Button>
@@ -223,7 +223,7 @@ export default function Home() {
                 Ready to transform your business with seamless Odoo solutions?
                 Let’s innovate together and drive your success forward.
               </p>
-              <Button path="/">Get Started</Button>
+              <Button path="/Get-started">Get Started</Button>
             </div>
             <div className="starter__right d-flex justify-content-center order-1 order-lg-2">
               <img src={gear} alt="gear" />

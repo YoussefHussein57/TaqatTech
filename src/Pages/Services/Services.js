@@ -37,7 +37,7 @@ export default function Services() {
               </p>
             </div>
             <div className="d-flex flex-column align-items-center mb-4">
-              <Button path="/">Get Started</Button>
+              <Button path="/Get-started">Get Started</Button>
             </div>
           </div>
           <div className="d-flex flex-column mt-5 services__container-img ">

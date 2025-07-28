@@ -7,8 +7,12 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-custom px-md-5"> {/* added px-4 for space on sides */}
       <div className="container gx-0">
+
+        <NavLink to="/">
+
         
         <img src={vector} alt="logoImage" className="HeaderLogo" />
+        </NavLink>
 
         <button
           className="navbar-toggler border-0"
@@ -74,7 +78,7 @@ export default function Header() {
             <button className="langBtn border-0 text-center fw-medium">
               عربي
             </button>
-              <Button path="/">
+              <Button path="/Get-started">
                 Get Started
                </Button>
            
