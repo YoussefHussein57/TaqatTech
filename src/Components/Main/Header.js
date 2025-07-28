@@ -23,7 +23,7 @@ export default function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse links" id="navbarSupportedContent">
@@ -74,7 +74,7 @@ export default function Header() {
           </ul>
 
           {/* Right-aligned */}
-          <form class="d-flex ms-auto gap-3" role="search"> {/* ms-auto pushes it to the end */}
+          <form className="d-flex ms-auto gap-3" role="search"> {/* ms-auto pushes it to the end */}
             <button className="langBtn border-0 text-center fw-medium">
               عربي
             </button>

@@ -1,0 +1,18 @@
+.job-card {
+  background-color: var(--bg-accent); /* #F9F5F9 */
+  transition: all .4s ease-in-out;
+}
+
+/* if you want a slightly darker hover: */
+.job-card:hover {
+  background-color: var(--bg-secondary-darker, #46194D);
+  color: white;
+  transform: scale(1.02);
+  
+}
+.job-card:hover .text-secondary,
+.job-card:hover small {
+  color: rgba(255,255,255,0.7);
+}
+
+/* make sure the Button picks up its custom styles for border-radius and colors */

@@ -10,26 +10,29 @@ function BlogCard({
   tag,
   tagBg = "#FEF9C3",
   variant = "bordered",
+  heightVariant="fixed",
   id,
 }) {
   const borderClass =
     variant === "borderLess" ? "border-less-button" : "read-more-link";
+      const heightClass =
+    heightVariant === "fixed" ? "fixed-height" : "variable-height";
   // function truncate(text, length = 120) {
   //   return text.length > length ? text.substring(0, length) + "..." : text;
   // }
   return (
     <div
-      className={`card  ${className} blog-card shadow-sm mb-3`}
+      className={`card  ${className} blog-card shadow-sm mb-3  ${heightClass} `}
       style={{ maxHeight: "570px" }}
     >
       {image && (
-        <img src={image} className="card-img-top top-img mb-3" alt={title} />
+        <img src={image} className=" top-img mb-3" alt={title} />
       )}
       <div className="card-body d-flex flex-column gap-2">
         {tag && (
           <span
             className="badge text-dark fw-medium mb-4"
-            style={{ backgroundColor: tagBg, width: "fit-content" }}
+            style={{ backgroundColor: tagBg }}
           >
             {tag}
           </span>

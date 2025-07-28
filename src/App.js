@@ -7,6 +7,7 @@ import About from './Pages/AboutUs/AboutUs';
 import Blog from  './Pages/Blog/Blog';
 import BlogDetails from './Pages/BlogDetails/BlogDetails';
 import Career from './Pages/Career/Career';
+import AllJobs from './Pages/AllJobs/AllJobs';
 import Case from './Pages/CaseStudy/CaseStudy';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import GetStarted from './Pages/GetStarted/GetStarted';
@@ -30,6 +31,7 @@ function App() {
       <Route path='/blog' element={<Blog />} />
        <Route path="/blog/:id" element={<BlogDetails />} />
       <Route path='/career' element={<Career />} />
+      <Route path='/career/all-jobs' element={<AllJobs />} />
       <Route path='/case' element={<Case />} />
       <Route path='/contactUs' element={<ContactUs />} />
       <Route path='/services' element={<Services />} />

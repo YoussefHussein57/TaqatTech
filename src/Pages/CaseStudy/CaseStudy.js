@@ -192,6 +192,7 @@ function CaseStudy() {
                     tagBg={story.tagBg}
                     title={story.title}
                     image={story.image}
+                    heightVariant="fixed" 
                     className="p-3"
                   >
                     {story.description}
