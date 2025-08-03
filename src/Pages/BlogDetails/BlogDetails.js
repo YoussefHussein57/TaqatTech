@@ -1,5 +1,4 @@
 import { useParams, Navigate, Link } from "react-router-dom";
-import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,9 +15,7 @@ export default function BlogDetails() {
   const { id } = useParams();
   const post = data.stories.find((p) => p.id.toString() === id);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 });
-  }, [id]);
+
   if (!post) return <Navigate to="/blog" replace />;
 
   const socialIcons = [faFacebookF, faYoutube, faXTwitter, faInstagram];

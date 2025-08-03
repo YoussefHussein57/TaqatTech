@@ -1,9 +1,11 @@
 import FilterBar from "../../Components/Custom/FilterBar/FilterBar";
 import BlogCard from "../../Components/Custom/BlogCard/BlogCard";
+import Pagination from "../../Components/Custom/Pagination/pagination";
 
 import "./Blog.css";
 
 import React, { useState, useMemo } from "react";
+
 
 import data from "../../data";
 
@@ -186,7 +188,17 @@ export default function Blog() {
               </div>
             ))}
           </div>
+          <div className="mt-5">
+
+          <Pagination 
+          currentPage={1}
+          totalPages={100}
+          onPageChange={1}
+          />
+          </div>
         </div>
+
+
       </section>
     </>
   );

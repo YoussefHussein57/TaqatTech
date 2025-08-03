@@ -22,7 +22,7 @@ function BlogCard({
   // }
   return (
     <div
-      className={`card  ${className} blog-card shadow-sm mb-3  ${heightClass} `}
+      className={`card  ${className} blog-card shadow-sm mb-3   ${heightClass} `}
       style={{ maxHeight: "570px" }}
     >
       {image && (
@@ -42,7 +42,7 @@ function BlogCard({
         </h5>
         <div
           className="card-text flex-grow-1 mb-3 truncate-3-lines"
-          style={{ fontWeight: 500, color: "#150E25", opacity: "0.6" }}
+          style={{ fontWeight: 500, color: "#150E25", opacity: "0.6"  , minHeight:"48px"}}
         >
           {children}
           {/* {truncate(children, 130)} */}

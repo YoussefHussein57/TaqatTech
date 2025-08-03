@@ -5,8 +5,6 @@
 
 /* if you want a slightly darker hover: */
 .job-card:hover {
-  background-color: var(--bg-secondary-darker, #46194D);
-  color: white;
   transform: scale(1.02);
   
 }

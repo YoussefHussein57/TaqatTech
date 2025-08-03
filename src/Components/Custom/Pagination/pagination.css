@@ -1,0 +1,30 @@
+.pagination-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  border-radius: 4px;
+  border: 1px solid var(--Color-Border-Primary-Default, #7F2E8C);
+  background: var(--Color-Background-Natural-Default, #FFF);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background: var(--txt-highlight);            /* or your highlight var */
+  border-color: var(--txt-highlight);
+  color: #fff;                                 /* ensure text contrasts */
+}

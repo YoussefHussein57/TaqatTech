@@ -1,0 +1,72 @@
+.job-details .breadcrumb a {
+  color: var(--txt-extra-dark);
+  text-decoration: none;
+}
+.job-details .breadcrumb span {
+  color: var(--txt-extra-dark);
+}
+
+/* Wrapper for each section */
+.section-wrapper {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 882px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 👈 aligns heading and text to the left */
+  text-align: left;
+}
+.section-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+.max-width-wrapper {
+  width: 100%;
+  max-width: 882px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+
+/* Spacing _inside_ each section */
+.section-wrapper > h2,
+.section-wrapper > h3 {
+  margin-bottom: 20px;
+  font-weight: var(--fw-bolder);
+}
+.section-wrapper > h2 {
+  font-size: var(--fs-lg);
+}
+.section-wrapper > h3 {
+  font-size: var(--fs-md);
+}
+
+/* Paragraphs 40px apart */
+.section-wrapper > p {
+  margin-bottom: 40px;
+  max-width: 882px;
+}
+.section-wrapper > p:last-child {
+  margin-bottom: 0;
+}
+
+/* List items 20px apart */
+.section-wrapper ul li + li {
+  margin-top: 20px;
+}
+.section-wrapper ul li {
+  max-width: 882px;
+}
+
+/* Social icons */
+.social-icon {
+  font-size: 24px;
+  color: var(--txt-extra-dark);
+}
+
+/* Optional: adjust <hr> spacing */
+.job-details hr {
+  border-color: var(--Color-Border-Primary-Default, #7f2e8c);
+  opacity: 0.1;
+}

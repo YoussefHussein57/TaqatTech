@@ -30,12 +30,6 @@ export default function Career() {
     load();
   }, []);
 
-  if (loading) return <p>Loading open positions…</p>;
-  if (error) return <p className="text-danger">Error: {error}</p>;
-
-  // Only show the first 5 here as a teaser
-  const teaser = jobs.slice(0, 5);
-
   return (
     <>
       <section>
@@ -235,8 +229,22 @@ export default function Career() {
           </div>
 
           {/* Teaser list */}
-          {teaser.map((job) => (
-            <JobsListing
+          {loading ? (
+          <div className="d-flex justify-content-center align-items-center py-5">
+            <div
+              className="spinner-border text-primary"
+              role="status"
+              style={{ width: "3rem", height: "3rem" }}
+            >
+              <span className="visually-hidden">Loading…</span>
+            </div>
+          </div>
+        ) : error ? (
+          <p className="text-danger">{error}</p>
+        ) : (
+          // Render just your teaser jobs here
+          jobs.slice(0, 5).map((job) => (
+             <JobsListing
               key={job.id}
               title={job.title}
               location={job.candidate_required_location}
@@ -244,7 +252,8 @@ export default function Career() {
               experience="0-3 Years"
               date={new Date(job.publication_date).toLocaleDateString()}
             />
-          ))}
+          ))
+        )}
         </div>
       </section>
     </>

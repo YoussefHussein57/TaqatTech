@@ -8,6 +8,8 @@ function JobsListing({
   type,
   experience,
   date,
+  path,
+  state
 }) {
   return (
     <div
@@ -15,16 +17,16 @@ function JobsListing({
     >
       <div>
         <h5 className="fw-bolder mb-2">{title}</h5>
-        <div className="d-flex align-items-center text-secondary small mb-2">
+        <div className="d-flex align-items-center text-secondary small mb-4">
           <span>{location}</span>
           <span className="mx-2">|</span>
           <span>{type}</span>
           <span className="mx-2">|</span>
           <span>{experience}</span>
         </div>
-        <small className="text-secondary">{date}</small>
+        <small className="text-secondary ">{date}</small>
       </div>
-      <Button  className="px-4 py-2">
+      <Button  path={path} state={state} className="px-4 py-2">
         Apply now &rarr;
       </Button>
     </div>
